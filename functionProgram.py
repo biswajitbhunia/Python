@@ -87,8 +87,10 @@ print('My Mother : '+fn2) #Since it is Global define in f() using global keyword
 print('My Name : '+fn) #It is Global by default
 #Can modify global varible
 fn='Dipankar'
-fn2='Goutam'
+fn2='Dipika'
+print('My Mother : '+fn2)
 f()
+print('My Mother : '+fn2)
 
 
 
