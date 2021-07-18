@@ -1,10 +1,11 @@
+#Function Definition using def keyword
 def f():
     print('This is function')
 
-'''Calling a function'''
+#Calling a function
 f()
 
-'''Use of Single Arguments'''
+#Use of Single Arguments
 def f(firstName):
       print(firstName + " Bhunia")
 
@@ -12,7 +13,9 @@ f("Biswajit")
 f("Kakali")
 f("Srijita")
 f('Ayush')
+#.................................................
 '''use of Arguments'''
+
 def f(firstName,lastName):
       print(firstName + ' ' + lastName)
 
@@ -88,9 +91,34 @@ print('My Name : '+fn) #It is Global by default
 #Can modify global varible
 fn='Dipankar'
 fn2='Dipika'
-print('My Mother : '+fn2)
+print('My Mother : '+fn2)  #before executing f()
 f()
-print('My Mother : '+fn2)
+print('My Mother : '+fn2) #after executing f()
+
+#Use of outer and inner function
+
+def outer():
+    a=10
+    b=30
+    def inner():
+        a=20
+        c=25
+        print('Beside the inner(), a: ',a) #it is declared also in outer()
+        print('Declared at outer(), b: ',b)
+        print('Declared at inner(), c: ',c)       
+    #calling inner function from outer function
+    print('Beside the outer() , a: ',a)
+    inner()
+#calling Outer function
+outer()
+
+
+#lambda function: single line function without name, it can not access global variables.
+
+s=lambda a,b:(lambda a>b: a)
+print('Sum= ',s(10,20))
+
+
 
 
 
