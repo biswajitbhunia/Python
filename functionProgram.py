@@ -115,7 +115,7 @@ outer()
 
 #lambda function: single line function without name, it can not access global variables.
 
-s=lambda a,b:(lambda a>b: a)
+s=lambda a,b:a+b
 print('Sum= ',s(10,20))
 
 
